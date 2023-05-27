@@ -3,16 +3,7 @@
 
 This library contains box with hinges generator, that is useful for creating various equipment cases, e.g. soldering irons, multimeters, etc.
 
-[cols=2]
-|===
-a|
-.Cyclone filter parts
-image::docs/screenshot_cut.png[width=202]
-a|
-.Assembled
-image::docs/photo_outside.png[width=150]
-|===
-
+image::docs/render.png[width=400]
 
 
 This library depends on https://github.com/nophead/NopSCADlib[NopSCADlib] and can be used as a git submodule in NopSCADlib styled CAD projects:
