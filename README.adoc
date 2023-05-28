@@ -16,18 +16,9 @@ git submodule add https://github.com/eraga/{openscad_lib_name} lib/{openscad_lib
 
 == Example usage
 
+See xref:box_et8134_multimeter.scad[].
+
 [source,openscad,subs=attributes+]
 ----
-include <../lib/{openscad_lib_name}/boxes_with_hinges.scad>
-
-box_with_hinges_assembly(SAMPLE_BOX);
-
-// draw your own box
-module box_with_hinges_bottom_sample_stl() {
-    difference(){
-        box_with_hinges_bottom(SAMPLE_BOX);
-        // place a pocket
-        cube([5,10,20]);
-    }
-}
+include::box_et8134_multimeter.scad[]
 ----
