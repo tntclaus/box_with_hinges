@@ -70,17 +70,18 @@ module box_half_hinge(type, top = false) {
                 }
 
             rotate([90, 0, 0]) {
-                cylinder(d = hd / 2, h = hw * 1.1, center = true);
+                teardrop(r = hd / 4, h = hw * 1.1, center = true);
+//                cylinder(d = hd / 2, h = hw * 1.1, center = true);
 
                 if (top)
                     translate([0, 0, hw / 2 + 1])
-                        cylinder(d = hd + .1, h = 2, center = true);
+                        cylinder(d = hd + 1, h = 2, center = true);
             }
 
             translate([0, top ? - hw / 4 / 2 : hw / 4 / 2, 0]) {
                 translate([0, top ? (hw / 2 + 5) : - (hw / 2 + 5), 0])
-                    cube([50, hw / 4 + .5 + 10, 50], center = true);
-                cube([50, hw / 4 + .5, 50], center = true);
+                    cube([50, hw / 4 + .2 + 10, 50], center = true);
+                cube([50, hw / 4 + .2, 50], center = true);
             }
         }
 }
